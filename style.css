@@ -1,0 +1,9 @@
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    width: 200px;
+    border: 20px solid red;
+    padding: 40px 500px 40px 40px;
+    margin: 0 auto;
+}
