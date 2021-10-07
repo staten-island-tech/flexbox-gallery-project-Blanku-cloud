@@ -29,16 +29,22 @@ img{
 
 }
 
-.main-div {
+.gallery {
     display: flex;
-    justify-content: center;
     flex-flow: wrap;
-    border: none;
-    margin: 0 auto;
-    box-shadow: none;
+    justify-content: space-evenly;
 }
 
 div {
+    border: 1rem solid pink;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    margin: 5rem;
+}
+
+
+/* div {
     text-align: center;
     font-size: 3rem;
     border: solid 1rem #E9C46A;
@@ -52,5 +58,5 @@ div {
 .text {
     font-size: 3rem;
     padding-bottom: 2rem;
-}
+} */
 
