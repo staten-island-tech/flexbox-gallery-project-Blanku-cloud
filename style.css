@@ -42,7 +42,6 @@ img{
 
 div {
     border: 1rem solid pink;
-    font-size: 5rem;
     text-align: center;
     flex: 0 28%;
     padding: 2rem;
@@ -58,6 +57,37 @@ div:hover {
 
 .text{
     padding-bottom: 2rem;
+    font-size: 5rem;
 }
 
 
+button {
+    color: white;
+    text-align: center;
+    padding: 0.5rem 01rem;
+    border: none;
+    margin: 0 auto;
+    font-size: 2rem;
+    display: block;
+    width: fit-content;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.torrb {
+    background-color: #9bcc50;
+}
+
+.torrb:hover {
+    animation: pulse 1s infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1);
+    100% { transform: scale(1); }
+    }
+  }
+  
