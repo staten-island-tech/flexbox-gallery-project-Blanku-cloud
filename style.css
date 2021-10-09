@@ -48,6 +48,7 @@ div {
     border-radius: 2rem;
     box-shadow: 12px 12px 2px 1px #F4A261;
     transition: all 0.3s;
+
     
 }
 
@@ -64,35 +65,25 @@ div:hover {
 button {
     color: white;
     text-align: center;
-    padding: 0.5rem 01rem;
+    padding: 0.5rem 1rem;
     border: none;
     margin: 0 auto;
     font-size: 2rem;
-    display: block;
     width: fit-content;
     border-radius: 1rem;
     cursor: pointer;
-    margin-top: 0.5rem;
+    position: relative;
+    top: 1rem;
+    display: block;
+    
 }
 
 .torrb {
     background-color: #9bcc50;
+    
 }
 
 .torrb:hover {
-    animation: pulse 1s infinite;
-    animation-timing-function: linear; 
-    background-color: #1B512D;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1);}
-    100% { transform: scale(1); }
-  }
-
-  .torrb:active {
-    vertical-align: top;
-    padding: 8px 13px 6px;
-}
-  
