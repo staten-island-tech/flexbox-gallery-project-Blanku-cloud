@@ -82,12 +82,17 @@ button {
 .torrb:hover {
     animation: pulse 1s infinite;
     animation-timing-function: linear; 
+    background-color: #1B512D;
 }
 
 @keyframes pulse {
     0% { transform: scale(1); }
-    50% { transform: scale(1.1);
+    50% { transform: scale(1.1);}
     100% { transform: scale(1); }
-    }
   }
+
+  .torrb:active {
+    vertical-align: top;
+    padding: 8px 13px 6px;
+}
   
