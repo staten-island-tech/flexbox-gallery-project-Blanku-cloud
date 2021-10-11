@@ -71,7 +71,7 @@ button, a {
     width: fit-content;
     border-radius: 1rem;
     cursor: pointer;
-    display: block;
+
 }
 
  a{
@@ -90,6 +90,8 @@ button, a {
 .fire {
     background-color: lightgrey;    
 }
+
+
 
 div:hover {
     transform: scale(1.1);
