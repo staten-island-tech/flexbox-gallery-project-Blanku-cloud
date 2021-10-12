@@ -74,12 +74,6 @@ button, a {
     
 }
 
-.bug, 
-.water,
-.dragon,
-.fire {
-    margin-left: 9rem;
-}
 
  a{
     text-decoration: none;
@@ -103,17 +97,21 @@ button, a {
 
 div:hover {
     transform: scale(1.1); 
+    transition-duration: 1s;
+}
+
+.grass:hover, .bug:hover {
+    box-shadow: 0.5rem 1rem 1rem 0 rgba(0,0,0,0.24)
+    
 }
 
 .grass:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: #9bcc50;
+  background-color: #9bcc50;  
 }
 
+
 /* how to traget specific angor tag and also how to change the color of both the button and angor tag at the same time how to add padding to buttons*/
-a:hover {
-    color: white;
-}
+
 
 #torterra:hover, #scizor:hover , #lapras:hover {
     background-color: #F3DE8A;
@@ -136,5 +134,5 @@ img:hover {
 
 .bug:hover{
     background-color: #A8B820;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
