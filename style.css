@@ -11,14 +11,18 @@ body {
     background-color: #2A9D8F;
 }
 
-.title {
+.header {
     width: 100%;
-    margin: 0 auto;
-    padding: 0.5rem;
-    text-align: center;
-    font-size: 7rem;
+   
     background-color: #264653;
     color: #E76F51;
+}
+
+h1{
+    font-size: 7rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.5rem;
 }
 
 img{
@@ -119,6 +123,21 @@ a:hover {
     background-color: #F3DE8A;
 }
 
+img{
+    animation-name: spin1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes spin1 {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
 img:hover {
     animation-name: spin;
     animation-duration: 1s;
@@ -138,3 +157,27 @@ img:hover {
     background-color: #A8B820;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+.title {
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+      
+        75% {
+          font-size: 300%;
+          margin-left: 25%;
+          width: 150%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+
+  } 
