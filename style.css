@@ -64,6 +64,10 @@ div {
     font-size: 5rem;
 }
 
+a {
+    padding: 0;
+}
+
 
 button, a {
     color: white;
@@ -76,6 +80,10 @@ button, a {
     border-radius: 1rem;
     cursor: pointer;
     display: block;
+}
+
+a {
+    padding: 0;
 }
 
 .bug, 
@@ -181,3 +189,4 @@ img:hover {
         }
 
   } 
+
