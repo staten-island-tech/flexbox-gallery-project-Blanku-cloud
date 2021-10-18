@@ -13,27 +13,31 @@ body {
 
 .header {
     width: 100%;
-   
     background-color: #264653;
     color: #E76F51;
 }
 
-h1{
+.title{
     font-size: 7rem;
     text-align: center;
     margin: 0 auto;
     padding: 0.5rem;
 }
 
-img{
+.boximg{
     height: 20rem;
+}
+
+#frog{
+    height: 25rem;
+    margin-top: -2rem;
+    
 }
 
 .gallery {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    flex: 0 32%;
     column-gap: 6rem;
     row-gap: 5rem;
     margin-top: 3rem;
@@ -41,7 +45,15 @@ img{
     
 }
 
-div {
+#torterra, 
+#scizor, 
+#lapras, 
+#rayquaza, 
+#Greninja, 
+#Milotic, 
+#Xerneas, 
+#Suicune, 
+#Charizard{
     border: 1rem solid pink;
     text-align: center;
     flex: 0 28%;
@@ -66,7 +78,18 @@ div {
 
 
 
-button, a {
+.grass,
+.bug,
+.steel,
+.water,
+.water1,
+.water2,
+.dragon, 
+.flying,
+.dark, 
+.fairy, 
+.fire 
+ {
     color: white;
     text-align: center;
     padding: 0.5rem 1rem;
@@ -76,24 +99,19 @@ button, a {
     width: fit-content;
     border-radius: 1rem;
     cursor: pointer;
+}
+
+.grass, .water1, .bugstell, .DragonFlying, .water, .fairy, .fireflying{
     display: block;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    
 }
 
-a {
-    padding: 0;
+.waterdark {
+    margin-top: -1rem;
 }
 
-.bug, 
-.water,
-.dragon,
-.fire {
-    margin-left: 9rem;
-}
-
- a{
-    text-decoration: none;
-    font-size: 2rem;
-}
 
 
 .grass, 
@@ -104,28 +122,120 @@ a {
 .flying,
 .dark, 
 .fairy, 
-.fire {
+.fire, 
+.water1,
+.water2 {
     background-color: lightgrey;    
 }
 
 
-
-div:hover {
+#torterra:hover, 
+#scizor:hover,  
+#rayquaza:hover, 
+#Greninja:hover, 
+#Milotic:hover, 
+#lapras:hover,
+#Xerneas:hover, 
+#Suicune:hover, 
+#Charizard:hover {
     transform: scale(1.1); 
 }
 
-.grass:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+#lapras:hover,
+#Greninja:hover, 
+#Xerneas:hover {
+    opacity: 0;
+    animation-duration: 2s;
+}
+
+#rayquaza:hover, #Milotic:hover {
+    animation-name: dropy;
+    animation-duration: 2s;
+}
+
+@keyframes dropy{
+
+    from {
+        transform: translateY(0);
+      }
+    
+    50% {
+        transform: translateY(5rem);
+    }
+
+     to {
+        opacity: 0;
+      }
+    
+}
+
+.grass:hover
+ {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: #9bcc50;
 }
 
-/* how to traget specific angor tag and also how to change the color of both the button and angor tag at the same time how to add padding to buttons*/
-a:hover {
-    color: white;
+.water1:hover,
+.water2:hover,
+.water:hover {
+    background-color: #0645ad;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-#torterra:hover, #scizor:hover , #lapras:hover {
+.steel:hover {
+    background-color: #a3a3a3;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.dragon:hover {
+    background-color: #76e;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.flying:hover {
+    background-color: #89f;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.dark:hover {
+    background-color: #754;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.fairy:hover {
+    background-color: #e9e;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.fire:hover {
+    background-color: #f42;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.bug:hover {
+    background-color: #A8B820;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* how to traget specific angor tag and also how to change the color of both the button and angor tag at the same time how to add padding to buttons*/
+
+
+#torterra:hover, 
+#scizor:hover , 
+#lapras:hover {
     background-color: #F3DE8A;
+}
+
+#rayquaza:hover, 
+#Greninja:hover, 
+#Milotic:hover {
+    background-color: #456990;
+} 
+
+#Xerneas:hover, 
+#Suicune:hover, 
+#Charizard:hover {
+    background-color: #e76f51;
 }
 
 img{
@@ -158,10 +268,6 @@ img:hover {
     }
 }
 
-.bug:hover{
-    background-color: #A8B820;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
 
 .title {
     animation-duration: 1s;
@@ -171,7 +277,7 @@ img:hover {
 @keyframes slidein {
         from {
           margin-left: 100%;
-          width: 300%;
+          width: 100%;
         }
       
         75% {
