@@ -245,10 +245,10 @@ img{
 }
 
 @keyframes spin1 {
-    from {
+    0% {
         transform:rotate(0deg);
     }
-    to {
+    100% {
         transform:rotate(360deg);
     }
 }
@@ -293,3 +293,40 @@ img:hover {
 
   } 
 
+
+  @media all and (max-width: 768px) {
+    
+    body {
+        background-color: #6A0F49;
+    }
+
+    .gallery {
+        column-gap: 4rem;
+        row-gap: 4rem;
+    }
+  
+
+    #torterra, 
+    #scizor, 
+    #lapras, 
+    #rayquaza, 
+    #Greninja, 
+    #Milotic, 
+    #Xerneas, 
+    #Suicune, 
+    #Charizard {
+        flex: 0 44%;
+    }
+    .Charizardtext, 
+    .suicunetext, 
+    .Xerneastext, 
+    .Milotictext, 
+    .Greninjatext, 
+    .rayquazatext, 
+    .laprastext, 
+    .scizortext, 
+    .torterratext {
+        color: white;
+    }
+
+}
