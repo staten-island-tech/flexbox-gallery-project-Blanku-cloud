@@ -1,0 +1,368 @@
+<<<<<<< HEAD
+=======
+
+html, body,  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #2A9D8F;
+}
+
+.header {
+    width: 100%;
+    background-color: #264653;
+    color: #E76F51;
+}
+
+.title{
+    font-size: 7rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.boximg{
+    height: 20rem;
+}
+
+
+.gallery {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    column-gap: 6rem;
+    row-gap: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+}
+
+#torterra, 
+#scizor, 
+#lapras, 
+#rayquaza, 
+#Greninja, 
+#Milotic, 
+#Xerneas, 
+#Suicune, 
+#Charizard{
+    border: 1rem solid pink;
+    text-align: center;
+    flex: 0 28%;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 12px 12px 2px 1px #F4A261;
+    transition: all 0.3s;  
+}
+
+.Charizardtext, 
+.suicunetext, 
+.Xerneastext, 
+.Milotictext, 
+.Greninjatext, 
+.rayquazatext, 
+.laprastext, 
+.scizortext, 
+.torterratext{
+    padding-bottom: 2rem;
+    font-size: 5rem;
+}
+
+
+
+.grass,
+.bug,
+.steel,
+.water,
+.water1,
+.water2,
+.dragon, 
+.flying,
+.dark, 
+.fairy, 
+.fire 
+ {
+    color: white;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin: 0 auto;
+    font-size: 2rem;
+    width: fit-content;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.grass, .water1, .bugstell, .DragonFlying, .water, .fairy, .fireflying, .waterdark{
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+
+
+.grass, 
+.bug, 
+.steel, 
+.water, 
+.dragon, 
+.flying,
+.dark, 
+.fairy, 
+.fire, 
+.water1,
+.water2 {
+    background-color: lightgrey;    
+}
+
+
+#torterra:hover, 
+#scizor:hover,  
+#rayquaza:hover, 
+#Greninja:hover, 
+#Milotic:hover, 
+#lapras:hover,
+#Xerneas:hover, 
+#Suicune:hover, 
+#Charizard:hover {
+    transform: scale(1.1); 
+}
+
+#lapras:hover,
+#Greninja:hover, 
+#Xerneas:hover {
+    opacity: 0;
+    animation-duration: 2s;
+}
+
+#rayquaza:hover, #Milotic:hover {
+    animation-name: dropy;
+    animation-duration: 2s;
+}
+
+@keyframes dropy{
+
+    from {
+        transform: translateY(0);
+      }
+    
+    50% {
+        transform: translateY(5rem);
+    }
+
+     to {
+        opacity: 0;
+      }
+    
+}
+
+.grass:hover
+ {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #9bcc50;
+}
+
+.water1:hover,
+.water2:hover,
+.water:hover {
+    background-color: #0645ad;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.steel:hover {
+    background-color: #a3a3a3;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.dragon:hover {
+    background-color: #76e;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.flying:hover {
+    background-color: #89f;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.dark:hover {
+    background-color: #754;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.fairy:hover {
+    background-color: #e9e;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.fire:hover {
+    background-color: #f42;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.bug:hover {
+    background-color: #A8B820;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* how to traget specific angor tag and also how to change the color of both the button and angor tag at the same time how to add padding to buttons*/
+
+
+#torterra:hover, 
+#scizor:hover , 
+#lapras:hover {
+    background-color: #F3DE8A;
+}
+
+#rayquaza:hover, 
+#Greninja:hover, 
+#Milotic:hover {
+    background-color: #456990;
+} 
+
+#Xerneas:hover, 
+#Suicune:hover, 
+#Charizard:hover {
+    background-color: #e76f51;
+}
+
+img{
+    animation-name: spin1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes spin1 {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+img:hover {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+.title {
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 100%;
+        }
+      
+        75% {
+          font-size: 300%;
+          margin-left: 25%;
+          width: 150%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+
+  } 
+  
+
+  @media all and (max-width:1024px) {
+    #torterra, 
+    #scizor, 
+    #lapras, 
+    #rayquaza, 
+    #Greninja, 
+    #Milotic, 
+    #Xerneas, 
+    #Suicune, 
+    #Charizard {
+        flex: 0 45%;
+    }
+
+    body {
+        background-color: #E76F51;
+    }
+
+    .gallery {
+        column-gap: 4rem;
+        row-gap: 4rem;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    
+    body {
+        background-color: #6A0F49;
+    }
+
+    .gallery {
+        column-gap: 3.5rem;
+        row-gap: 4rem;
+    }
+  
+
+    #torterra, 
+    #scizor, 
+    #lapras, 
+    #rayquaza, 
+    #Greninja, 
+    #Milotic, 
+    #Xerneas, 
+    #Suicune, 
+    #Charizard {
+        flex: 0 44%;
+    }
+
+    .Charizardtext, 
+    .suicunetext, 
+    .Xerneastext, 
+    .Milotictext, 
+    .Greninjatext, 
+    .rayquazatext, 
+    .laprastext, 
+    .scizortext, 
+    .torterratext {
+        color: white;
+    }
+
+}
+
+@media all and (max-width: 390px) {
+    body {
+        background-color:#F3DE8A; 
+    }
+
+    #torterra, 
+    #scizor, 
+    #lapras, 
+    #rayquaza, 
+    #Greninja, 
+    #Milotic, 
+    #Xerneas, 
+    #Suicune, 
+    #Charizard {
+        flex: 0 80%;
+    }
+}
+>>>>>>> parent of 064bc2f (Finish Media Queries)
