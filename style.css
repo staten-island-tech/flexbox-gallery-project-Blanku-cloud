@@ -72,17 +72,10 @@ body {
 
 
 
-.grass,
-.bug,
-.steel,
-.water,
+.type
+
 .water1,
-.water2,
-.dragon, 
-.flying,
-.dark, 
-.fairy, 
-.fire 
+
  {
     color: white;
     text-align: center;
@@ -243,7 +236,7 @@ img{
     }
 }
 
-img:hover {
+img:hover{
     animation-name: spin;
     animation-duration: 1s;
     animation-timing-function: linear; 
@@ -282,6 +275,23 @@ img:hover {
         }
 
   } 
+
+  #scizor:hover {
+      animation-name: bigsmall;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+  }
+
+  @keyframes bigsmall {
+      0% {
+          transform: rotate(0deg) scale(0deg);
+      }
+
+ 
+      100% {
+        transform: rotate(270deg) scale(0.5);
+      }
+  }
   
 
   @media all and (max-width:1024px) {
