@@ -28,11 +28,6 @@ body {
     height: 20rem;
 }
 
-#frog{
-    height: 25rem;
-    margin-top: -2rem;
-    
-}
 
 .gallery {
     display: flex;
@@ -101,15 +96,11 @@ body {
     cursor: pointer;
 }
 
-.grass, .water1, .bugstell, .DragonFlying, .water, .fairy, .fireflying{
+.grass, .water1, .bugstell, .DragonFlying, .water, .fairy, .fireflying, .waterdark{
     display: block;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
     
-}
-
-.waterdark {
-    margin-top: -1rem;
 }
 
 
@@ -292,7 +283,30 @@ img:hover {
         }
 
   } 
+  
 
+  @media all and (max-width:1024px) {
+    #torterra, 
+    #scizor, 
+    #lapras, 
+    #rayquaza, 
+    #Greninja, 
+    #Milotic, 
+    #Xerneas, 
+    #Suicune, 
+    #Charizard {
+        flex: 0 45%;
+    }
+
+    body {
+        background-color: #E76F51;
+    }
+
+    .gallery {
+        column-gap: 4rem;
+        row-gap: 4rem;
+    }
+  }
 
   @media all and (max-width: 768px) {
     
@@ -301,7 +315,7 @@ img:hover {
     }
 
     .gallery {
-        column-gap: 4rem;
+        column-gap: 3.5rem;
         row-gap: 4rem;
     }
   
@@ -317,6 +331,7 @@ img:hover {
     #Charizard {
         flex: 0 44%;
     }
+
     .Charizardtext, 
     .suicunetext, 
     .Xerneastext, 
@@ -329,4 +344,22 @@ img:hover {
         color: white;
     }
 
+}
+
+@media all and (max-width: 390px) {
+    body {
+        background-color:#F3DE8A; 
+    }
+
+    #torterra, 
+    #scizor, 
+    #lapras, 
+    #rayquaza, 
+    #Greninja, 
+    #Milotic, 
+    #Xerneas, 
+    #Suicune, 
+    #Charizard {
+        flex: 0 80%;
+    }
 }
