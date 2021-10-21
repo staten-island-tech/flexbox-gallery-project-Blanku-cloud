@@ -363,7 +363,7 @@ img:hover {
 
 }
 
-@media all and (max-width: 390px) {
+@media all and (max-width: 584px) {
     body {
         background-color:#F3DE8A; 
     }
@@ -377,7 +377,7 @@ img:hover {
     #Xerneas, 
     #Suicune, 
     #Charizard {
-        flex: 0 80%;
+        flex: 0 85%;
     }
 }
 
